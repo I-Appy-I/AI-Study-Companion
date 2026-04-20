@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f4f6;
+}
+
+.dark body {
+  background-color: #111827;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* ── React Calendar Dark Mode ── */
+.dark .react-calendar {
+  background-color: transparent !important;
+  color: #e5e7eb !important;
+  border: none !important;
+}
+.dark .react-calendar__tile {
+  color: #d1d5db !important;
+}
+.dark .react-calendar__tile:hover {
+  background-color: #374151 !important;
+}
+.dark .react-calendar__tile--active {
+  background-color: #4f46e5 !important;
+  color: white !important;
+}
+.dark .react-calendar__tile--now {
+  background-color: #374151 !important;
+}
+.dark .react-calendar__navigation button {
+  color: #e5e7eb !important;
+}
+.dark .react-calendar__navigation button:hover {
+  background-color: #374151 !important;
+}
+.dark .react-calendar__month-view__weekdays {
+  color: #9ca3af !important;
+}
+.dark .react-calendar__month-view__days__day--neighboringMonth {
+  color: #4b5563 !important;
+}
